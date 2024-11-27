@@ -90,6 +90,8 @@ button:hover {
     transition: all 0.5s;
 }
 
-/* git remote add origin https://github.com/NarendraPosal07/Arvish-Global-Design.git
-git branch -M main
-git push -u origin main */
+.glass-card {
+    background: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
