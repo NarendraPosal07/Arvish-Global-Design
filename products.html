@@ -51,43 +51,109 @@
         <div class="heading mt-34 pt-24">Arvish Global</div>
     </div>
 
-    <div class="bg-[#121212] max-w-4xl w-full p-8 rounded-lg shadow-lg">
-        <h1 class="text-center text-3xl font-bold text-white">
-            <span class="text-[#C5A572]">Get In</span> Touch
-        </h1>
-        <form action="#" class="mt-6 space-y-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- First Name -->
-                <input type="text" placeholder="First Name"
-                    class="w-full bg-black text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#C5A572]" />
-                <!-- Last Name -->
-                <input type="text" placeholder="Last Name"
-                    class="w-full bg-black text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#C5A572]" />
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Email Address -->
-                <input type="email" placeholder="Email Address"
-                    class="w-full bg-black text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#C5A572]" />
-                <!-- Number -->
-                <input type="text" placeholder="Number"
-                    class="w-full bg-black text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#C5A572]" />
-            </div>
-            <!-- Message -->
-            <textarea placeholder="Write Your Message"
-                class="w-full bg-black text-white placeholder-gray-500 border border-gray-700 rounded-lg px-4 py-3 h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#C5A572]"></textarea>
-            <!-- Submit Button -->
-            <div class="text-center">
-                <button type="submit"
-                    class="px-6 py-3 bg-transparent border border-[#C5A572] text-[#C5A572] rounded-full font-semibold hover:bg-[#C5A572] hover:text-black transition duration-300 flex items-center justify-center gap-2">
-                    Submit
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </button>
-            </div>
-        </form>
+
+    <!-- Navigation -->
+    <nav class="flex items-center justify-center gap-2 overflow-x-auto pb-6 mb-6">
+        <button class="flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-colors bg-white/10 text-white">
+            <span class="w-4 h-4">🌶️</span>
+            <span>Dry Red Chili</span>
+        </button>
+        <button
+            class="flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-colors text-white/70 hover:text-white hover:bg-white/5">
+            <span class="w-4 h-4">🫘</span>
+            <span>Pulses</span>
+        </button>
+        <button
+            class="flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-colors text-white/70 hover:text-white hover:bg-white/5">
+            <span class="w-4 h-4">🌾</span>
+            <span>Rice</span>
+        </button>
+        <button
+            class="flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-colors text-white/70 hover:text-white hover:bg-white/5">
+            <span class="w-4 h-4">🌾</span>
+            <span>Grain</span>
+        </button>
+        <button
+            class="flex items-center gap-2 px-4 py-2 text-sm rounded-full transition-colors text-white/70 hover:text-white hover:bg-white/5">
+            <span class="w-4 h-4">🧂</span>
+            <span>Spices</span>
+        </button>
+    </nav>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (4).png" alt="Dry Red Chili"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Dry Red Chili</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (3).png" alt="Garlic"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Garlic</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877.png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Sesame Seeds</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (1).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Chana dal</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (12).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Corn starch</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (11).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">cumin Seeds</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (10).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Rice</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (9).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Grain</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (8).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Oil Seeds</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (7).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Feed</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (6).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">Pulses</h3>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg aspect-square">
+            <img src="./images/Rectangle 3877 (5).png" alt="Sesame Seeds"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-0 right-0 text-center font-medium">ginger</h3>
+        </div>
     </div>
 
     <footer style="background-image: url(./images/Group\ 1116601395\ \(1\).png);" class="pt-10 bg-cover bg-no-reapet">
@@ -205,7 +271,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 
