@@ -14,44 +14,67 @@
 
 <body class="bg-black">
 
-    <div style="background-image: url('./images/vegetables-set-left-black-slate\ 2\ \(2\).png');"
-        class="relative bg-cover bg-no-reapet w-[100%] h-[540px] overlay">
-        <div class="overlay"></div>
-        <header class="flex z-2 justify-around items-center p-4">
-            <div class="logo w-[200px]">
-                <img src="images/image 1.png" alt="logo">
-            </div>
-            <div class="navbar">
-                <ul class="flex justify-between gap-6 playfair-display font-medium text-white items-center">
-                    <li>
-                        <a href="#" class="hover:text-yellow-500">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-500">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-500">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-500">Products</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-500">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-yellow-500">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <button class="text-white p-2 px-4 rounded border-orange-400 border">Book Now >></button>
-        </header>
-        <div class="banner m-16 mt-44 ms-24 grid gap-y-4 tracking-wide">
-            <h1 class="text-orange-500 playfair-display text-5xl">Blog</h1>
-        </div>
-        <div class="heading mt-34 pt-24">Arvish Global</div>
-    </div>
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/10">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="/" class="w-52">
+                    <img src="./images/image 1.png" alt="">
+                </a>
 
-    <div class="max-w-7xl mx-auto">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="/" class="text-white hover:text-[#FFB800] transition-colors">Home</a>
+                    <a href="/about" class="text-[#FFB800]">About Us</a>
+                    <a href="/gallery" class="text-white hover:text-[#FFB800] transition-colors">Gallery</a>
+                    <a href="/products" class="text-white hover:text-[#FFB800] transition-colors">Products</a>
+                    <a href="/blog" class="text-white hover:text-[#FFB800] transition-colors">Blog</a>
+                    <a href="/contact" class="text-white hover:text-[#FFB800] transition-colors">Contact Us</a>
+                </div>
+
+                <!-- Book Now Button -->
+                <button
+                    class="hidden md:flex items-center gap-2 px-6 py-2 bg-[#FFB800] text-black rounded-full hover:bg-[#E5A700] transition-colors">
+                    Book Now
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="./images/vegetables-set-left-black-slate 2 (2).png" alt="Spices in wooden bowls"
+                class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative container mx-auto px-4 pt-32">
+            <div class="max-w-3xl">
+                <h1 class="text-[#FFB800] text-4xl md:text-6xl font-bold mb-4">
+                    Blog
+                </h1>
+                <h2 class="text-white/80 text-5xl md:text-7xl font-bold">
+                    Arvish Global
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-7xl mx-auto py-[50px]">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Main Content -->
             <div class="lg:col-span-2">
@@ -162,10 +185,9 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
                 <!-- Company Info -->
                 <div class="space-y-4 me-1">
-                    <div class="flex items-center space-x-2">
-                        <span class="text-yellow-500 font-bold text-2xl">AG</span>
-                        <span class="text-yellow-500 font-semibold">Arvish Global</span>
-                    </div>
+                    <a href="/" class="w-52">
+                        <img src="./images/image 1.png" alt="">
+                    </a>
                     <p class="text-gray-300 text-sm">
                         Arvish Global is one of the fastest growing Indian based registered company for export of all
                         kinds of Agricultural products.

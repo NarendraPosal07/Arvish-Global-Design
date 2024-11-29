@@ -14,118 +14,156 @@
 
 <body class="bg-black">
 
-  <div style="background-image: url('./images/vegetables-set-left-black-slate\ 2.png');"
-    class="relative bg-cover bg-no-reapet w-[100%] h-[545px] overlay">
-    <div class="overlay"></div>
-    <header class="flex z-10 justify-around items-center p-4">
-      <div class="logo w-[200px]">
-        <img src="images/image 1.png" alt="logo">
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-20">
+          <!-- Logo -->
+          <a href="/" class="w-52">
+            <img src="./images/image 1.png" alt="">
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-8">
+            <a href="/" class="text-[#FFB800]">Home</a>
+            <a href="/about" class="text-white hover:text-[#FFB800] transition-colors">About Us</a>
+            <a href="/gallery" class="text-white hover:text-[#FFB800] transition-colors">Gallery</a>
+            <a href="/products" class="text-white hover:text-[#FFB800] transition-colors">Products</a>
+            <a href="/blog" class="text-white hover:text-[#FFB800] transition-colors">Blog</a>
+            <a href="/contact" class="text-white hover:text-[#FFB800] transition-colors">Contact Us</a>
+          </div>
+
+          <!-- Book Now Button -->
+          <button
+            class="hidden md:flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-colors">
+            Book Now
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
       </div>
-      <div class="navbar">
-        <ul class="flex justify-between gap-6 playfair-display font-medium text-white items-center">
-          <li>
-            <a href="#" class="hover:text-yellow-500">Home</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-yellow-500">About Us</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-yellow-500">Gallery</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-yellow-500">Products</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-yellow-500">Blog</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-yellow-500">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <button class="text-white p-2 px-4 rounded border-orange-400 border">Book Now >></button>
-    </header>
-    <div class="banner m-16 mt-34 ms-24 grid gap-y-4 tracking-wide">
-      <h6 class="text-white text-xl">Discover the Essences of Flavor</h6>
-      <h1 class="text-orange-500 playfair-display text-5xl">Explor Our Spice and Seed <br> Treasures</h1>
-      <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing amet sit dilor<br> elit. Corrupti
-        eveniet
-      </p>
-      <div class="btn">
-        <button class="block text-white p-2 px-4 rounded border-orange-400 border">Book Now >></button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="./images/vegetables-set-left-black-slate 2.png" alt="Fresh vegetables and spices"
+        class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative container mx-auto px-4 pt-32">
+      <div class="max-w-2xl space-y-6">
+        <span class="text-white text-lg">Discover the Essence of Flavor</span>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-[#FFB800]">
+          Explore Our Spice and Seed Treasures
+        </h1>
+
+        <p class="text-gray-400 max-w-xl">
+          Lorem ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quisque Nulla Arcu, Suscipit Nec Nisi At, M Magna
+          Feugiat Aliquam.
+        </p>
+
+        <button
+          class="flex items-center gap-2 px-8 py-3 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-colors">
+          Book Now
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
       </div>
     </div>
-    <div class="heading">Arvish Global</div>
-  </div>
 
-  <div class="container mx-auto px-4 py-12">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-center">
+      <span class="text-white text-sm block mb-2">Scroll Down</span>
+      <div class="w-6 h-6 mx-auto text-[#FFB800] animate-bounce">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mx-auto px-4 py-[50px]">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <!-- Left Column -->
       <div class="space-y-6">
         <div class="relative">
-          <img src="/placeholder.svg?height=500&width=500" alt="Colorful spice grid" class="w-full rounded-2xl" />
+          <img src="/placeholder.svg?height=600&width=600" alt="Colorful spice grid" class="w-full rounded-lg" />
           <div class="absolute bottom-0 left-0 right-0 p-6">
-            <p class="text-sm mb-2">Welcome To Arvish Global</p>
-            <h1 class="text-4xl font-bold">
+            <p class="text-white mb-2">Welcome To Arvish Global</p>
+            <h2 class="text-4xl font-bold">
               <span class="text-[#FFB800]">The Richest Masala</span>
-              <span class="block mt-2">In The World</span>
-            </h1>
+              <span class="text-white"> In The World</span>
+            </h2>
           </div>
         </div>
       </div>
 
       <!-- Right Column -->
       <div class="space-y-8">
-        <!-- About Us Section -->
-        <div class="space-y-6">
-          <div class="relative">
-            <img src="/placeholder.svg?height=300&width=500" alt="Red chilies" class="w-full rounded-2xl" />
-          </div>
-
-          <div class="space-y-4">
-            <h2 class="text-[#FFB800] text-2xl font-semibold">About Us</h2>
-            <p class="text-gray-400">
-              Arvish Global, Established in 2015, with a purpose of providing premium Indian agricultural products to
-              the world. We are based in Gujarat, India, we're produces and also work with cluster of farmers to
-              produces premium quality products which meet global standards.
-            </p>
-
-            <!-- Checkmark Items -->
-            <div class="space-y-3">
-              <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <span class="text-gray-400">To create memorable experiences for our</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                <span class="text-gray-400">To create memorable experiences for our</span>
-              </div>
-            </div>
-
-            <!-- Read More Button -->
-            <button class="flex items-center gap-2 text-[#FFB800] hover:text-[#FFD700] transition-colors">
-              Read More
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
-          </div>
+        <!-- About Us Content -->
+        <div class="grid grid-cols-2 gap-4">
+          <img src="/placeholder.svg?height=300&width=400" alt="Red chilies" class="w-full rounded-lg" />
+          <img src="/placeholder.svg?height=300&width=400" alt="Spices in wooden spoons" class="w-full rounded-lg" />
         </div>
 
-        <!-- Additional Images -->
+        <div class="space-y-6">
+          <h3 class="text-[#FFB800] text-2xl font-semibold">About Us</h3>
+
+          <p class="text-gray-400">
+            Arvish Global, Established in 2015, with a purpose of providing premium Indian agricultural products to the
+            world. We are based in Gujarat, India, we're produces and also work with cluster of farmers to produces
+            premium quality products which meet global standard.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span class="text-gray-400">To create memorable experiences for our</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span class="text-gray-400">To create memorable experiences for our</span>
+            </div>
+          </div>
+
+          <button
+            class="flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-colors">
+            Read More
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+        </div>
+
         <div class="grid grid-cols-2 gap-4">
-          <img src="/placeholder.svg?height=250&width=250" alt="Spices in wooden spoons" class="w-full rounded-2xl" />
-          <img src="/placeholder.svg?height=250&width=250" alt="Prepared dish" class="w-full rounded-2xl" />
+          <img src="/placeholder.svg?height=300&width=400" alt="Prepared spicy dish" class="w-full rounded-lg" />
+          <img src="/placeholder.svg?height=300&width=400" alt="Various spices display" class="w-full rounded-lg" />
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mx-auto px-4 py-16">
+  <div class="container mx-auto px-4 py-[50px]">
     <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
       <!-- Best Quality Products Card -->
       <div class="glass-card rounded-2xl p-6 space-y-4">
@@ -173,7 +211,7 @@
     </div>
   </div>
 
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 py-[50px]">
     <!-- Gallery Header -->
     <div class="text-center mb-12">
       <h2 class="text-[#FFB800] text-4xl font-bold mb-4">Gallery</h2>
@@ -233,7 +271,7 @@
       <!-- View More Button -->
       <div class="text-center mt-8">
         <button
-          class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded-full hover:bg-[#FFB800] hover:text-black transition-all duration-300">
+          class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-all duration-300">
           View More
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -243,7 +281,7 @@
     </div>
   </div>
 
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 py-[50px]">
     <!-- Section Header -->
     <div class="text-center mb-12">
       <h2 class="text-[#FFB800] text-4xl font-bold mb-4">Our Products</h2>
@@ -322,7 +360,7 @@
     <!-- View More Button -->
     <div class="text-center mt-8">
       <button
-        class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded-full hover:bg-[#FFB800] hover:text-black transition-all duration-300">
+        class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-all duration-300">
         View More
         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -331,11 +369,11 @@
     </div>
   </div>
 
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 py-[50px]">
     <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
       <!-- Money Back Guarantee Card -->
       <div class="glass-card rounded-2xl p-6 text-center relative">
-        <div class="w-12 h-12 bg-[#FFB800]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="w-12 h-12 bg-[#FFB800]/10 rounded flex items-center justify-center mx-auto mb-4">
           <svg class="w-6 h-6 text-[#FFB800]" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z" />
@@ -349,7 +387,7 @@
 
       <!-- Free Shipping Card -->
       <div class="glass-card rounded-2xl p-6 text-center relative">
-        <div class="w-12 h-12 bg-[#FFB800]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="w-12 h-12 bg-[#FFB800]/10 rounded flex items-center justify-center mx-auto mb-4">
           <svg class="w-6 h-6 text-[#FFB800]" viewBox="0 0 24 24" fill="currentColor">
             <path
               d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
@@ -363,7 +401,7 @@
 
       <!-- Customer Service Card -->
       <div class="glass-card rounded-2xl p-6 text-center relative">
-        <div class="w-12 h-12 bg-[#FFB800]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+        <div class="w-12 h-12 bg-[#FFB800]/10 rounded flex items-center justify-center mx-auto mb-4">
           <svg class="w-6 h-6 text-[#FFB800]" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" />
           </svg>
@@ -376,7 +414,7 @@
     </div>
   </div>
 
-  <section class="py-16">
+  <section class="py-[50px]">
     <div class="container mx-auto px-4 max-w-6xl">
       <!-- Testimonial Header -->
       <div class="mb-8">
@@ -402,7 +440,7 @@
               dolor ipsum, convalllis porttis faucibus eu.
             </p>
             <div class="flex items-center gap-4">
-              <img src="/placeholder.svg?height=40&width=40" alt="Profile" class="w-10 h-10 rounded-full" />
+              <img src="/placeholder.svg?height=40&width=40" alt="Profile" class="w-10 h-10 rounded" />
               <div>
                 <h4 class="text-white font-medium">Dianne Russell</h4>
                 <p class="text-gray-400 text-sm">Manager Director</p>
@@ -420,13 +458,13 @@
           <!-- Navigation Buttons -->
           <div class="absolute -left-4 top-1/2 -translate-y-1/2 flex items-center gap-4">
             <button
-              class="w-8 h-8 rounded-full bg-[#FFB800] text-black flex items-center justify-center hover:bg-[#E5A700] transition-colors">
+              class="w-8 h-8 rounded bg-[#FFB800] text-black flex items-center justify-center hover:bg-[#E5A700] transition-colors">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
-              class="w-8 h-8 rounded-full bg-[#FFB800] text-black flex items-center justify-center hover:bg-[#E5A700] transition-colors">
+              class="w-8 h-8 rounded bg-[#FFB800] text-black flex items-center justify-center hover:bg-[#E5A700] transition-colors">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
               </svg>
@@ -437,7 +475,7 @@
     </div>
   </section>
 
-  <section class="py-16 border-t border-gray-800">
+  <section class="py-[50px] border-t border-gray-800">
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="flex flex-col md:flex-row items-center justify-between gap-8">
         <div>
@@ -459,41 +497,39 @@
     </div>
   </section>
 
-  <footer style="background-image: url('./images/Group\ 1116601395\ \(1\).png');" class="pt-10 bg-cover bg-no-reapet">
-    <div class=" container px-24">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+
+  <footer style="background-image: url('./images/Group\ 1116601395\ \(1\).png');"
+    class="w-full h-full object-cover text-white pt-16 pb-6">
+    <div class="container mx-auto px-4 ">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Company Info -->
-        <div class="space-y-4 me-1">
-          <div class="flex items-center space-x-2">
-            <span class="text-yellow-500 font-bold text-2xl">AG</span>
-            <span class="text-yellow-500 font-semibold">Arvish Global</span>
-          </div>
-          <p class="text-gray-300 text-sm">
-            Arvish Global is one of the fastest growing Indian based registered company for export of all
-            kinds of Agricultural products.
+        <div class="space-y-6">
+          <a href="/" class="w-52">
+            <img src="./images/image 1.png" alt="">
+          </a>
+          <p class="text-gray-400 text-sm">
+            Arvish Global is one of the fasting growing Indian based registered company for export of all kinds of
+            Agricultural products.
           </p>
-          <div class="space-y-2">
-            <h3 class="text-yellow-500">Follow Us</h3>
-            <div class="flex space-x-4">
-              <a href="#" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M18.364 6.364a9 9 0 11-12.728 0M12 2.251v9M9.75 4.5h4.5" />
+          <div class="space-y-4">
+            <h4 class="text-[#FFB800] font-semibold">Follow Us</h4>
+            <div class="flex gap-4">
+              <a href="#" class="text-white hover:text-[#FFB800] transition-colors" aria-label="Facebook">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
                 </svg>
               </a>
-              <a href="#" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M7 7l3.293 3.293a1 1 0 010 1.414L7 15m10 0l-3.293-3.293a1 1 0 010-1.414L17 7M10 5v14m4-14v14" />
+              <a href="#" class="text-white hover:text-[#FFB800] transition-colors" aria-label="Instagram">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg>
               </a>
-              <a href="#" class="bg-yellow-500 p-2 rounded-full hover:bg-yellow-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-black" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M8.29 20.29a1 1 0 001.42 0L12 17.41l2.29 2.88a1 1 0 001.42 0m0-12a9 9 0 11-12 0" />
+              <a href="#" class="text-white hover:text-[#FFB800] transition-colors" aria-label="Twitter">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
             </div>
@@ -501,74 +537,67 @@
         </div>
 
         <!-- Quick Links -->
-        <div class="space-y-4">
-          <h3 class="text-yellow-500 text-lg font-semibold">Quick Link</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Home</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">About Us</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Gallery</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Products</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Blog</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Contact Us</a></li>
+        <div>
+          <h4 class="text-[#FFB800] font-semibold mb-6">Quick Link</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gallery</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
           </ul>
         </div>
 
         <!-- Services -->
-        <div class="space-y-4">
-          <h3 class="text-yellow-500 text-lg font-semibold">Services</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Rice</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Dry red Chili</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Pulses</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Grain</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-yellow-500">Spices</a></li>
+        <div>
+          <h4 class="text-[#FFB800] font-semibold mb-6">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Rice</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Dry red Chili</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pulses</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Grain</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Spices</a></li>
           </ul>
         </div>
 
-        <!-- Contact Us -->
-        <div class="space-y-4">
-          <h3 class="text-yellow-500 text-lg font-semibold">Contact Us</h3>
-          <div class="space-y-3 text-gray-300">
-            <p class="flex items-start space-x-2">
-              <span class="bg-yellow-500 p-1 rounded-full mt-1">
-                <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </span>
-              <span>A-808, Swastik Universal Building, Near Valentine Cinema Rundi, Surat, Gujarat,
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-[#FFB800] font-semibold mb-6">Contact Us</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-[#FFB800] mt-1 flex-shrink-0" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-gray-400">A-508, Swastik Universal Buiding, Near Valentine Cinema Roard, Surat Gujrat
                 India-395007</span>
-            </p>
-            <p class="flex items-center space-x-2">
-              <span class="bg-yellow-500 p-1 rounded-full">
-                <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </span>
-              <span>Export@avishglobal.com</span>
-            </p>
-            <p class="flex items-center space-x-2">
-              <span class="bg-yellow-500 p-1 rounded-full">
-                <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-              </span>
-              <span>+91878015457</span>
-            </p>
-          </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#FFB800] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:Export@swishglobal.com"
+                class="text-gray-400 hover:text-white transition-colors">Export@swishglobal.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#FFB800] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span class="text-gray-400">+918780156457</span>
+            </li>
+          </ul>
         </div>
       </div>
 
       <!-- Copyright -->
-      <div class="text-center mt-8 pt-2 pb-2 border-t border-gray-800">
-        <p class="text-gray-400 text-sm">
+      <div class="border-t border-gray-800 mt-12 pt-6">
+        <p class="text-center text-gray-400 text-sm">
           Copyright © 2022 Arvish Global All Rights Reserved.
         </p>
       </div>
