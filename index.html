@@ -44,11 +44,32 @@
           </button>
 
           <!-- Mobile Menu Button -->
-          <button class="md:hidden text-white">
+          <button class="md:hidden text-white ham-burger">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
+          <nav class="space-y-8 hidden v_nave">
+            <a href="/" class="block text-[#FFB800] text-2xl font-light">
+              Home
+            </a>
+            <a href="./aboutUs.html"
+              class="block text-white text-2xl font-light hover:text-[#FFB800] transition-colors">
+              About Us
+            </a>
+            <a href="./gallery" class="block text-white text-2xl font-light hover:text-[#FFB800] transition-colors">
+              Gallery
+            </a>
+            <a href="./product" class="block text-white text-2xl font-light hover:text-[#FFB800] transition-colors">
+              Product
+            </a>
+            <a href="./blog" class="block text-white text-2xl font-light hover:text-[#FFB800] transition-colors">
+              Blog
+            </a>
+            <a href="./contact" class="block text-white text-2xl font-light hover:text-[#FFB800] transition-colors">
+              Contact Us
+            </a>
+          </nav>
         </div>
       </div>
     </nav>
@@ -84,6 +105,9 @@
             <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
+        <h2 class="text-5xl md:text-7xl heading opacity-20">
+          Arvish Global
+        </h2>
       </div>
     </div>
 
@@ -103,7 +127,7 @@
       <!-- Left Column -->
       <div class="space-y-6">
         <div class="relative">
-          <img src="/placeholder.svg?height=600&width=600" alt="Colorful spice grid" class="w-full rounded-lg" />
+          <img src="./images/Rectangle 290 (4).png" alt="Colorful spice grid" class="w-full rounded-lg" />
           <div class="absolute bottom-0 left-0 right-0 p-6">
             <p class="text-white mb-2">Welcome To Arvish Global</p>
             <h2 class="text-4xl font-bold">
@@ -118,8 +142,8 @@
       <div class="space-y-8">
         <!-- About Us Content -->
         <div class="grid grid-cols-2 gap-4">
-          <img src="/placeholder.svg?height=300&width=400" alt="Red chilies" class="w-full rounded-lg" />
-          <img src="/placeholder.svg?height=300&width=400" alt="Spices in wooden spoons" class="w-full rounded-lg" />
+          <img src="./images/Rectangle 5.png" alt="Red chilies" class="w-full rounded-lg" />
+          <img src="./images/Rectangle 6.png" alt="Spices in wooden spoons" class="w-full rounded-lg" />
         </div>
 
         <div class="space-y-6">
@@ -414,6 +438,119 @@
     </div>
   </div>
 
+  <section class="relative min-h-[300px] flex items-center justify-center py-[50px] overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="./images/Rectangle 4288.png" alt="Spices and herbs background" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative text-center max-w-3xl mx-auto px-4 py-16">
+      <span class="text-white text-sm md:text-base uppercase tracking-wider mb-4 block">
+        Healthy Herbs
+      </span>
+
+      <h2 class="text-3xl md:text-5xl font-bold text-[#FFB800] mb-6">
+        Get 10% off On All Spicy & Herbs
+      </h2>
+
+      <p class="text-gray-400 text-sm md:text-base max-w-xl mx-auto">
+        Lorem ipsum has become the industry standard for design mockups and prototypes. By adding a little bit of Latin
+        to a mockup.
+      </p>
+    </div>
+  </section>
+
+  <div class="container mx-auto px-4 py-[50px]">
+    <!-- Section Header -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">
+        <span class="text-[#FFB800]">Our</span>
+        <span class="text-white"> Blog</span>
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum, eros in consectetur ornare
+      </p>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-8">
+      <!-- Blog Card 1 -->
+      <article class="group relative overflow-hidden rounded-lg">
+        <div class="relative aspect-[4/3]">
+          <img src="/placeholder.svg?height=300&width=400" alt="Black pepper powder in crystal bowl"
+            class="w-full h-full object-cover" />
+          <!-- Date Overlay -->
+          <div class="absolute top-4 left-4 bg-black/70 rounded-lg px-3 py-1 text-white text-sm">
+            <span class="font-bold">23</span>
+            <span class="text-xs uppercase">Aug</span>
+          </div>
+          <!-- Gradient Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6">
+          <h3 class="text-[#FFB800] text-xl font-semibold mb-2">Black pepper powder</h3>
+          <p class="text-gray-300 text-sm line-clamp-2">
+            Enjoy a lavish meal at the Soil Water Restaurant multi cuisine restaurant with eight elegant gazebos ... get
+            freshed like
+          </p>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="group relative overflow-hidden rounded-lg">
+        <div class="relative aspect-[4/3]">
+          <img src="/placeholder.svg?height=300&width=400" alt="The full cardamom spices"
+            class="w-full h-full object-cover" />
+          <div class="absolute top-4 left-4 bg-black/70 rounded-lg px-3 py-1 text-white text-sm">
+            <span class="font-bold">27</span>
+            <span class="text-xs uppercase">Aug</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6">
+          <h3 class="text-[#FFB800] text-xl font-semibold mb-2">The full cardamom</h3>
+          <p class="text-gray-300 text-sm line-clamp-2">
+            Enjoy a lavish meal at the Soil Water Restaurant multi cuisine restaurant with eight elegant gazebos ... get
+            freshed like
+          </p>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="group relative overflow-hidden rounded-lg">
+        <div class="relative aspect-[4/3]">
+          <img src="/placeholder.svg?height=300&width=400" alt="Rosehip Berries with garlic"
+            class="w-full h-full object-cover" />
+          <div class="absolute top-4 left-4 bg-black/70 rounded-lg px-3 py-1 text-white text-sm">
+            <span class="font-bold">23</span>
+            <span class="text-xs uppercase">Aug</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 p-6">
+          <h3 class="text-[#FFB800] text-xl font-semibold mb-2">Rosehip Berries</h3>
+          <p class="text-gray-300 text-sm line-clamp-2">
+            Enjoy a lavish meal at the Soil Water Restaurant multi cuisine restaurant with eight elegant gazebos ... get
+            freshed like
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Read More Button -->
+    <div class="text-center">
+      <button
+        class="inline-flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-all duration-300">
+        Read More
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
   <section class="py-[50px]">
     <div class="container mx-auto px-4 max-w-6xl">
       <!-- Testimonial Header -->
@@ -604,6 +741,8 @@
     </div>
   </footer>
 
+  <script src="./js/script.js">
+  </script>
 
 </body>
 
