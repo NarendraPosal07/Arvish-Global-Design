@@ -126,13 +126,59 @@
     </div>
   </section>
 
-  <div class="container mx-auto px-4 py-[50px]">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-      <!-- Left Column -->
-      <div class="space-y-6">
-        <div class="relative">
+  <div class="min-h-screen py-16 bg-black py-[50px]">
+    <div class="container mx-auto px-4">
+      <!-- Mobile Layout -->
+      <div class="lg:hidden space-y-8">
+        <div class="text-center space-y-4">
+          <p class="text-white">Welcome To Arvish Global</p>
+          <h1 class="text-4xl font-bold">
+            <span class="text-[#FFB800]">The Richest Masala</span>
+            <span class="text-white"> In The World</span>
+          </h1>
+        </div>
+        <div class="space-y-6">
           <img src="./images/Rectangle 4.png" alt="Colorful spice grid" class="w-full rounded-lg" />
-          <div class="absolute bottom-0 left-0 right-0 p-6">
+          <div class="flex grid grid-cols-2 items-center justify-center">
+            <img src="./images/Rectangle 5.png" alt="Red chilies" class="rounded-lg p-2" />
+            <img src="./images/Rectangle 6.png" alt="Red chilies" class="rounded" />
+          </div>
+
+          <h2 class="text-[#FFB800] text-2xl font-semibold">About Us</h2>
+          <p class="text-gray-400">
+            Arvish Global, Established in 2015, with a purpose of providing premium Indian agricultural
+            products to the world. We are based in Gujarat, India, and work with farmers to produce premium
+            quality products that meet global standards.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="text-gray-400">To create memorable experiences for our</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="text-gray-400">To create memorable experiences for our</span>
+            </div>
+          </div>
+          <button
+            class="flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded-full hover:bg-[#FFB800] hover:text-black transition-colors">
+            Read More
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop Layout -->
+      <div class="hidden lg:grid grid-cols-3 gap-8">
+        <div class="space-y-4">
+          <img src="./images/Rectangle 4.png" alt="Colorful spice grid" class="w-full rounded-lg" />
+          <div>
             <p class="text-white mb-2">Welcome To Arvish Global</p>
             <h2 class="text-4xl font-bold">
               <span class="text-[#FFB800]">The Richest Masala</span>
@@ -140,50 +186,42 @@
             </h2>
           </div>
         </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="space-y-8">
-        <!-- About Us Content -->
-        <div class="grid grid-cols-2 gap-4">
-          <img src="./images/Rectangle 5.png" alt="Red chilies" class="w-full rounded-lg" />
-          <img src="./images/Rectangle 6.png" alt="Spices in wooden spoons" class="w-full rounded-lg" />
-        </div>
-
         <div class="space-y-6">
-          <h3 class="text-[#FFB800] text-2xl font-semibold">About Us</h3>
-
-          <p class="text-gray-400">
-            Arvish Global, Established in 2015, with a purpose of providing premium Indian agricultural products to the
-            world. We are based in Gujarat, India, we're produces and also work with cluster of farmers to produces
-            premium quality products which meet global standard.
-          </p>
-
+          <img src="./images/Rectangle 5.png" alt="Red chilies" class="w-full rounded-lg" />
           <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-              <span class="text-gray-400">To create memorable experiences for our</span>
+            <h3 class="text-[#FFB800] text-2xl font-semibold">About Us</h3>
+            <p class="text-gray-400">
+              Arvish Global, Established in 2015, with a purpose of providing premium Indian agricultural
+              products to the world. We are based in Gujarat, India, and work with farmers to produce
+              premium quality products that meet global standards.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-gray-400">To create memorable experiences for our</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M20 6L9 17l-5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-gray-400">To create memorable experiences for our</span>
+              </div>
             </div>
-            <div class="flex items-center gap-3">
-              <svg class="w-5 h-5 text-[#FFB800]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <button
+              class="flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded-full hover:bg-[#FFB800] hover:text-black transition-colors">
+              Read More
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              <span class="text-gray-400">To create memorable experiences for our</span>
-            </div>
+            </button>
           </div>
-
-          <button
-            class="flex items-center gap-2 px-6 py-2 bg-transparent border border-[#FFB800] text-[#FFB800] rounded hover:bg-[#FFB800] hover:text-black transition-colors">
-            Read More
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
         </div>
-
-
+        <div class="space-y-4">
+          <img src="./images/pngwing 1.png" alt="Spices in wooden spoons" class="w-full rounded-lg" />
+          <img src="./images/Rectangle 6.png" alt="Prepared spicy dish" class="w-full rounded-lg" />
+        </div>
       </div>
     </div>
   </div>
